@@ -2,8 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+<div class="vertical-center">
 
-  Zachary Chai
+  <div class="horizontal-center">
+
+    <h2 class="text-center">Zachary Chai</h2>
+    <div class="horizontal-center">
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.linkedin_username %}
+        <li>
+          {% include icon-linkedin.html username=site.linkedin_username %}
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+
+  </div>
 
 </div>
